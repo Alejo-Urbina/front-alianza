@@ -1,0 +1,59 @@
+<form (submit)="crear()">
+    <h1>Ingresar Cliente</h1>
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Shared key:</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text"id="sharedKey" name="sharedKey">
+      </div><br>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Business Id:</label>
+      </div>
+      <div class="col-sm-4">
+        <input validar type="text" id="businessId" name="businessId" placeholder="Business Id"
+          class="form-control" formControlName="businessId">
+      </div><br>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+          <label>email:</label>
+        </div>
+        <div class="col-sm-4">
+          <input validar type="text" id="email" name="email" placeholder="email"
+            class="form-control" formControlName="email">
+        </div><br>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <label>phone:</label>
+        </div>
+        <div class="col-sm-4">
+          <input validar type="text" id="phone" name="phone" placeholder="phone"
+            class="form-control" formControlName="phone">
+        </div><br>
+      </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Start Date:</label>
+      </div>
+      <div class="col-sm-4">
+        <input validar type="date" id="startDate" name="startDate" placeholder="Start Date"
+          class="form-control" formControlName="startDate">
+      </div><br>
+    </div>  
+    <div class="row">
+        <div class="col-sm-2">
+          <label>End Date:</label>
+        </div>
+        <div class="col-sm-4">
+          <input validar type="date" id="endDate" name="endDate" placeholder="End Date"
+            class="form-control" formControlName="endDate">
+        </div><br>
+        <button id="crear" type="submit">Crear</button>
+        <div>
+        </div><br>
+      </div>  
+  </form>
